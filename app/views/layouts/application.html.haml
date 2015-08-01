@@ -8,5 +8,13 @@
     = controller_assets
     = csrf_meta_tags
   %body
-    = render 'layouts/navbar'
-    = yield
+    .section.group
+      .col.span_3_of_3
+        = render 'layouts/sidebar'
+        = render 'layouts/navbar'
+    .section.group
+      = yield
+    .section.group
+      .col.span_1_of_3
+        footer
+

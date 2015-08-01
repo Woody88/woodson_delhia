@@ -13,6 +13,14 @@
  *= require_self
  */
 
+@import 'html5reset'
+@import 'col'
+@import '12cols'
+@import '3cols'
+@import "font-awesome-sprockets"
+@import "font-awesome"
+
+
 *
   padding: 0
   margin: 0
@@ -20,8 +28,95 @@
   -moz-box-sizing: border-box
   box-sizing: border-box
 
+/***** Nav Bar *****/
 nav
   width: 100%
   height: 55px
+
+
+header
+  font-size: 20px
+  font-weight: bold
+
+.nav-container
+  position: relative
   padding: 10px 
-  background-color: blue
+
+.nav-container > header
+  position: absolute
+  left: 10px
+
+.nav-container > .menu-button
+  position: absolute
+  width: 40px
+  right: 10px
+
+.menu-button:hover
+  .menu-bar 
+    border-color: #d3d3d3
+
+  cursor: pointer
+  color: #d3d3d3
+
+.menu-bar 
+  position: relative
+  text-align: center
+  padding: 6px
+  border: 2px solid #222
+  border-radius: 5px
+
+/***** Side Bar *****/
+aside#sidebar
+  position: absolute
+  height: 100%
+  width: 225px
+  display: none
+  right: 0
+  background-color: #222
+
+
+/***** Side Bar *****/
+.my_motto
+  text-align: center
+  font-size: 1.3em
+  margin-bottom: 5px
+
+/***** My Photo *****/
+
+#photo-container
+  float: none
+
+.picture-wrapper
+  position: relative
+
+#my_photo
+  display: block
+  width: 300px
+  height: 300px
+  border: 1px solid #fff
+  margin: 0 auto
+
+p.message_to_viewers
+  word-wrap: break-word
+
+@media (min-width:480px)
+
+@media (min-width:600px)
+
+  #my_photo
+  display: block
+  width: 300px
+  height: 300px
+
+@media (min-width:1025px)
+  .nav-container > .menu-button
+    display: none 
+
+  #photo-container
+    float: left
+  #my_photo
+    margin: 0 0 0 5em
+
+  p.message_to_viewers
+    width: 500px
+
