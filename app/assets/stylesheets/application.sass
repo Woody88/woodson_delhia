@@ -27,29 +27,41 @@
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+
 html, body
-  height: 100%
-  font-family: Helvetica,Verdana,Arial,sans-serif
-  font-weight: lighter
+  font-family: Georgia,"Times New Roman",Times,serif
+  font-weight: 300
+  background-color: #fff
+  padding: 0 20px
+
 a
   color: #222
   text-decoration: none
 
 q:before
-  content: '"'
+  content: "\201C"
 
 q:after
-  content: '"'
+  content: "\201D"
 
 .text-center
   text-align: center
+
+.site-wrapper
+  -webkit-transition: 1s ease-in-out
+  -moz-transition: 1s ease-in-out
+  -o-transition: 1s ease-in-out
+  transition: 1s ease-in-out
+  background-color: #F8F8F8
+#skills
+  background-color: #E1E3E5
 /***** Nav Bar *****/
 nav
   position: relative
   width: 100%
-  height: 55px
+  height: 70px
   margin-bottom: 20px
-  border-bottom: 2px solid #2980b9
+  background-color: #fff
 
 
 header
@@ -80,8 +92,13 @@ header
   position: relative
   text-align: center
   padding: 6px
-  border: 2px solid #222
+  border: 1px solid #222
   border-radius: 5px
+
+.bars
+  font-size: 1.8em
+  font-weight: bold
+
 #menu
   float: right
   font-size: 1.3em
@@ -92,22 +109,36 @@ header
   margin-right: 5px
 
 /***** Side Bar *****/
-aside#sidebar
-  position: absolute
+aside.sidebar
+  position: fixed
   height: 100%
   width: 225px
-  display: none
   right: 0
+  display: none
   background-color: #222
+  -webkit-transition: 1s ease-in-out
+  -moz-transition: 1s ease-in-out
+  -o-transition: 1s ease-in-out
+  transition: 1s ease-in-out
 
+.adjust-body-menu
+  margin-right: 225px
+  -webkit-transition: 1s ease-in-out
+  -moz-transition: 1s ease-in-out
+  -o-transition: 1s ease-in-out
+  transition: 1s ease-in-out
 
 /***** Side Bar *****/
 .my_motto
   text-align: center
   font-size: 1.3em
   margin-bottom: 5px
-.page-container
-  padding: 0 50px
+
+
+.rescale
+  margin-right: 225px
+  transform: scale(.9, .9)
+   
 
 /***** My Photo *****/
 
@@ -133,6 +164,31 @@ p.message_to_viewers
   margin: 8px 0
   text-align: center
 
+.logo-container
+  position: relative
+  float: left
+  border: 1px solid #222
+  text-align: center
+  padding: 15px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  width: 16%
+  margin:  2% 2% 50px 2%
+  font-size: 50%
+
+
+.skill-description
+  text-transform: uppercase
+
+.screener
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 100
+
 footer
   background-color: #2A2D30
   height: 300px
@@ -140,10 +196,7 @@ footer
 @media (min-width:480px)
 
 @media (min-width:600px)
-  .nav-container > .menu-button
-    display: none 
-  #menu
-    display: block
+
 @media (min-width:1025px)
   .nav-container > .menu-button
     display: none 

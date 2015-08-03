@@ -8,11 +8,12 @@
     = controller_assets
     = csrf_meta_tags
   %body
-    .section.group
-      = render 'layouts/sidebar'
-      = render 'layouts/navbar'
-    .section.group.page-container
-      = yield
-    .section.group
-      = render 'layouts/footer'
+    = render 'layouts/sidebar'
+    .site-wrapper
+      .section.group
+        = render 'layouts/navbar'
+      .section.group.page-container
+        = yield
+      .section.group
+        = render 'layouts/footer'
 

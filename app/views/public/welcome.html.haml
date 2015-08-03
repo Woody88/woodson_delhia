@@ -19,27 +19,57 @@
         OR
       %button.learn-more
         Get In Touch
-.section.group
+.section.group#skills
   %hr
   %h3
     Technical Skills
-  .skills-logo-container
-    .logo-wrapper
-      = image_tag('logos/ajax.png', alt: 'ajax-logo')
-    .logo-wrapper
-      = image_tag('logos/html5.png', alt: 'html5-logo')
-    .logo-wrapper
-      = image_tag('logos/php.png', alt: 'php-logo', size: '45x45')
-    .logo-wrapper
-      = image_tag('logos/rubylang.png', alt: 'ruby-logo', size: '45x45')
-    .logo-wrapper
-      = image_tag('logos/rails-logo.png', alt: 'rails-logo', size: '45x50')
-    .logo-wrapper
-      = image_tag('logos/postgresql.png', alt: 'postgresql-logo')
-    .logo-wrapper
-      = image_tag('logos/bootstrap-logo.png', alt: 'bootstrap-logo', size: '45x45')
-    .logo-wrapper
-      = image_tag('logos/linux.png', alt: '%linux-logo')
+  .skills-logos-container
+    .logo-container
+      .skill-logo
+        = image_tag('logos/ajax.png', alt: 'ajax-logo', class: 'skill-logo')
+      .skill-description
+        Ajax
+    .logo-container
+      .skill-logo
+        = image_tag('logos/html5.png', alt: 'html5-logo', class: 'skill-logo')
+      .skill-description
+        Html5
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/php.png', alt: 'php-logo', size: '45x45', class: 'skill-logo')
+      .skill-description
+        Php
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/rubylang.png', alt: 'ruby-logo', size: '45x45', class: 'skill-logo')
+      .skill-description
+        Ruby
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/rails-logo.png', alt: 'rails-logo', size: '45x45', class: 'skill-logo')
+      .skill-description
+        Ruby on Rails
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/postgresql.png', alt: 'postgresql-logo', class: 'skill-logo')      
+      .skill-description
+        Postgresql
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/bootstrap-logo.png', alt: 'bootstrap-logo', size: '45x45',class: 'skill-logo')
+      .skill-description
+        Bootstrap
+
+    .logo-container
+      .skill-logo
+        = image_tag('logos/linux.png', alt: '%linux-logo',class: 'skill-logo')
+      .skill-description
+        Linux
 %h3 
   My Recent Blogs
 .section.group

@@ -14,3 +14,9 @@
 #= require jquery_ujs
 #= require ractive
 #= require turbolinks
+
+jQuery -> 
+
+  $('.menu-button').click ->
+    $('.sidebar').toggle("both")
+    $('.site-wrapper').toggleClass('rescale')
