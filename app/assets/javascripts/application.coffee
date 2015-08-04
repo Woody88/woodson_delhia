@@ -18,5 +18,5 @@
 jQuery -> 
 
   $('.menu-button').click ->
-    $('.sidebar').toggle("both")
-    $('.site-wrapper').toggleClass('rescale')
+     $('#site-wrapper').toggleClass('slide-site-wrapper')
+     $('.sidebar').toggleClass('show-menu')
