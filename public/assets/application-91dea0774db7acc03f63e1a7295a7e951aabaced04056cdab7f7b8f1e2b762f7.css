@@ -297,31 +297,43 @@ input, select {
 /* line 4, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
 .span_3_of_3 {
   width: 100%;
-}
-
-/* line 8, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
-.span_2_of_3 {
-  width: 66.13%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /* line 12, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
+.span_2_of_3 {
+  width: 66.13%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 20, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
 .span_1_of_3 {
   width: 32.26%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {
-  /* line 20, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
+  /* line 32, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
   .span_3_of_3 {
     width: 100%;
   }
 
-  /* line 23, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
+  /* line 35, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
   .span_2_of_3 {
     width: 100%;
   }
 
-  /* line 26, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
+  /* line 38, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/3cols.css */
   .span_1_of_3 {
     width: 100%;
   }
@@ -3228,151 +3240,210 @@ input, select {
   box-sizing: border-box;
 }
 
-/* line 31, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 32, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 html, body {
+  width: 100%;
   height: 100%;
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-  font-weight: lighter;
+  background: #f7f7f7 url("/images/bg_texture.jpg") repeat scroll 0 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
 }
 
-/* line 35, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-a {
-  color: #222;
-  text-decoration: none;
+/* line 40, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+#site-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 90px 20px 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-/* line 39, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 51, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.slide-site-wrapper {
+  margin-left: -225px;
+}
+
+/* line 56, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 q:before {
-  content: '"';
+  content: "“";
 }
 
-/* line 42, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 59, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 q:after {
-  content: '"';
+  content: "”";
 }
 
-/* line 45, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 62, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .text-center {
   text-align: center;
 }
 
-/***** Nav Bar **** */
-/* line 48, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-nav {
-  position: relative;
-  width: 100%;
-  height: 55px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #2980b9;
+/* line 65, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+#skills {
+  background-color: #fff;
 }
 
-/* line 56, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/***** Nav Bar **** */
+/* line 69, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  letter-spacing: -1px;
+  z-index: 100;
+  border-bottom: 1px solid #d3d3d3;
+  -webkit-box-shadow: -3px -1px 3px 1px #939393;
+  -moz-box-shadow: -3px -1px 3px 1px #939393;
+  box-shadow: -3px -1px 3px 1px #939393;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 87, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+nav small {
+  font-size: 0.3em;
+}
+
+/* line 91, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 header {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 60, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 95, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .nav-container {
   position: relative;
   padding: 10px;
 }
 
-/* line 64, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 99, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .nav-container > header {
   position: absolute;
   left: 10px;
 }
 
-/* line 68, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 103, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .nav-container > .menu-button {
   position: absolute;
   width: 40px;
   right: 10px;
 }
 
-/* line 73, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-.menu-button:hover {
+/* line 108, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.menu-button {
+  z-index: 110;
+}
+
+/* line 111, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.menu-bar:hover {
   cursor: pointer;
   color: #d3d3d3;
 }
-/* line 74, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-.menu-button:hover .menu-bar {
-  border-color: #d3d3d3;
-}
 
-/* line 80, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 115, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .menu-bar {
-  position: relative;
+  position: absolute;
+  top: -20px;
   text-align: center;
   padding: 6px;
-  border: 2px solid #222;
-  border-radius: 5px;
+  font-size: 3em;
+  font-weight: bold;
 }
 
-/* line 86, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 126, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 #menu {
   float: right;
   font-size: 1.3em;
   display: none;
 }
 
-/* line 91, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 131, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 #menu > li {
   display: inline-block;
   margin-right: 5px;
 }
 
 /***** Side Bar **** */
-/* line 96, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-aside#sidebar {
-  position: absolute;
+/* line 136, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.sidebar {
+  position: fixed;
   height: 100%;
   width: 225px;
-  display: none;
   right: 0;
-  background-color: #222;
+  color: #fff;
+  background-color: #00000c;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
 
-/***** Side Bar **** */
-/* line 106, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 151, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.show-menu {
+  right: -225px;
+}
+
+/* line 154, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+#sidebar-menu {
+  list-style: none;
+}
+/* line 157, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+#sidebar-menu li {
+  border: 2px solid #000019;
+  text-align: center;
+  padding: 20px;
+}
+/* line 162, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+#sidebar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/***** My Motto **** */
+/* line 170, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .my_motto {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  font-style: lighter;
   margin-bottom: 5px;
 }
 
-/* line 110, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-.page-container {
-  padding: 0 50px;
-}
-
 /***** My Photo **** */
-/* line 115, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 178, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 #photo-container {
   float: none;
 }
 
-/* line 118, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 181, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .picture-wrapper {
   position: relative;
 }
 
-/* line 121, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 184, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 #my_photo {
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 160px;
+  height: 200px;
   border: 1px solid #fff;
-  margin: 0 auto;
+  margin: 20px auto;
+  border-radius: 5pxh;
 }
 
-/* line 128, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 193, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 p.message_to_viewers {
+  font-size: 0.9em;
   word-wrap: break-word;
 }
 
-/* line 131, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/* line 197, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 .contact-wrapper > button {
   height: 50px;
   width: 100%;
@@ -3380,46 +3451,123 @@ p.message_to_viewers {
   text-align: center;
 }
 
-/* line 137, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+/***** TECHNICAL SKILLS **** */
+/* line 205, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.technical-skills-wrapper h3 {
+  width: auto;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+/* line 212, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.logo-container {
+  text-align: center;
+  margin: 0 0 10px 0;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 6px -6px #777;
+  -moz-box-shadow: 0px 10px 6px -6px #777;
+  box-shadow: 0px 10px 6px -6px #777;
+}
+/* line 221, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.logo-container img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 225, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.logo-container .logo-wrapper {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 229, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.logo-container .skill-description {
+  border-top: 1px solid #d3d3d3;
+}
+
+/* line 232, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.skill-logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 250, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.skill-description {
+  text-transform: uppercase;
+}
+
+/* line 253, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+.screener {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* line 261, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
 footer {
   background-color: #2A2D30;
-  height: 300px;
+  height: 150px;
 }
 
-@media (min-width: 600px) {
-  /* line 144, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-  .nav-container > .menu-button {
-    display: none;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 273, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  .skill-logo > img {
+    width: 30px;
+    height: 30px;
   }
 
-  /* line 146, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
-  #menu {
-    display: block;
-  }
+  /*.rescale
+   * position: fixed
+   * top: 0
+   * width: 100%
+   * z-index: 1000
+   * right: 225px
+   * -webkit-transition: all 3s ease-in-out 2s
+   * -moz-transition: all 3s ease-in-out 2s
+   * -o-transition: 3s ease-in-out 2s
+   * transition: all 3s ease-in-out 2s
+   *
+   *
+   * .nav-container > header
+   *   left: -100px
+   *   -webkit-transition: 1s ease-in-out
+   *   -moz-transition: 1s ease-in-out
+   *   -o-transition: 1s ease-in-out
+   *   transition: 1s ease-in-out
+   */
 }
 @media (min-width: 1025px) {
-  /* line 149, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  /* line 299, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
   .nav-container > .menu-button {
     display: none;
   }
 
-  /* line 151, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  /* line 301, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
   #menu {
     display: block;
   }
 
-  /* line 154, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  /* line 304, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
   #photo-container {
     float: left;
   }
 
-  /* line 156, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  /* line 306, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
   #my_photo {
     margin: 0 0 0 5em;
   }
 
-  /* line 159, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  /* line 309, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
   p.message_to_viewers {
     width: 500px;
+  }
+
+  /* line 311, /home/woodson/Rails/my_portfolio/app/assets/stylesheets/application.sass */
+  .rescale {
+    margin-right: 225px;
+    transform: scale(0.9, 0.9);
   }
 }

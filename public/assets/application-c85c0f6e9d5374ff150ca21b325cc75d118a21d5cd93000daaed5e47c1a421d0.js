@@ -28235,6 +28235,12 @@ return jQuery;
 
 }).call(this);
 (function() {
-
+  jQuery(function() {
+    return $('.menu-button').click(function() {
+      $('#site-wrapper').toggleClass('slide-site-wrapper');
+      $('nav').toggleClass('slide-site-wrapper');
+      return $('.sidebar').toggleClass('show-menu');
+    });
+  });
 
 }).call(this);
