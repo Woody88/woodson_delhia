@@ -19,5 +19,6 @@ jQuery ->
 
   $('.menu-button').click ->
     $('body').toggleClass('slide-site-wrapper')
+    $('nav').toggleClass('slide-site-wrapper')
 
     
