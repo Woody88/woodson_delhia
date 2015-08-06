@@ -18,6 +18,6 @@
 jQuery -> 
 
   $('.menu-button').click ->
-     $('#site-wrapper').toggleClass('slide-site-wrapper')
-     $('nav').toggleClass('slide-site-wrapper')
-     $('.sidebar').toggleClass('show-menu')
+    $('body').toggleClass('slide-site-wrapper')
+
+    
