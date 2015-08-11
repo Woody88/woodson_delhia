@@ -13,29 +13,16 @@
     %p.message_to_viewers
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus eros. Proin non malesuada orci, id vulputate nunc. Quisque tincidunt, nulla quis feugiat auctor, libero enim consectetur urna, ac luctus nunc lacus a elit. Quisque urna ante, aliquet id mauris mollis, ullamcorper euismod urna. Cras porttitor diam gravida turpis luctus, eget tempus urna fermentum. Sed mollis non nunc eu mattis. Nullam in tortor laoreet, faucibus velit id, congue nunc. Suspendisse tempor sem nec dolor ultricies, sed efficitur velit consectetur. Fusce id est at dolor dictum vulputate.
     .contact-wrapper
-      %button.learn-more
+
+      %a.more-about-me{:href => "#", :role => "button"}
         More About Me
       %p.text-center
         OR
-      %button.learn-more
+      %a.get-in-touch{:href => "#", :role => "button"}
         Get In Touch
+    
 .section.group#skills
   = render 'technical_skills'
-/ %h3 
-/   My Recent Blogs
-/ .section.group
-/   .col.span_1_of_3
-/     %h4 
-/       Title
-/     %p
-/       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus eros. Proin non malesuada orci, id vulputate nunc. Quisque tincidunt, nulla quis feugiat auctor, libero enim consectetur urna, ac luctus nunc lacus a elit. 
-/   .col.span_1_of_3
-/     %h4 
-/       Title
-/     %p
-/       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus eros. Proin non malesuada orci, id vulputate nunc. Quisque tincidunt, nulla quis feugiat auctor, libero enim consectetur urna, ac luctus nunc lacus a elit. 
-/   .col.span_1_of_3
-/     %h4 
-/       Title
-/     %p
-/       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus eros. Proin non malesuada orci, id vulputate nunc. Quisque tincidunt, nulla quis feugiat auctor, libero enim consectetur urna, ac luctus nunc lacus a elit. 
+  
+.section.group#recent_blogs
+  = render 'recent_blogs'

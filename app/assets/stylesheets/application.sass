@@ -20,6 +20,7 @@
 @import "font-awesome-sprockets"
 @import "font-awesome"
 
+$primary: #4682B4
 
 *
   padding: 0
@@ -27,6 +28,18 @@
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+  text-decoration: none
+a
+  color: #222
+
+.sub-header
+  font-size: 1.3em
+  line-height: 1em
+  text-transform: uppercase
+  text-align: center
+  margin: 10px 0 15px 0
+  border-bottom: 1px solid #222
+
 
 html, body
   width: 100%
@@ -41,8 +54,6 @@ html, body
 #site-wrapper
   padding-top: 70px
   background: image-url('bg_text.jpg') repeat 
- 
-
   //background-color: #F8F8F8
 
 .slide-site-wrapper
@@ -60,16 +71,9 @@ q:after
 .text-center
   text-align: center
 
-#skills
 
-.skills-header
-  font-size: 1.3em
-  line-height: 1em
-  text-transform: uppercase
-  text-align: center
-  padding: 10px 0
 
-/***** Nav Bar *****/
+/***** NAV BAR STYLING*****/
 nav
   position: fixed
   width: 100%
@@ -163,20 +167,19 @@ header
 
   a
     color: #fff
-    text-decoration: none
 
 
-
-/***** My Motto *****/
+/***** MY MOTTO STYLING *****/
 
 .my_motto
   text-align: center
   font-size: 1.4em
-  font-style: lighter
+  font-style: bold
+  font-weight: 500
   margin: 20px 10px 0
 
 
-/***** My Photo *****/
+/***** MY PHOTO STYLING*****/
 #photo-container
   float: none
 
@@ -193,23 +196,33 @@ header
 
 
 p.message_to_viewers
+  padding: 10px 0
   font-size: 0.9em
   word-wrap: break-word
 
-.contact-wrapper > button 
-  height: 50px
-  width: 100%
-  margin: 8px 0
-  text-align: center
+.contact-wrapper
+  margin: 15px 0
 
-/***** TECHNICAL SKILLS *****/
-.technical-skills-wrapper
-  h3
-    width: auto
-    padding: 5px 0px
-    text-transform: uppercase
-    border-bottom: 1px solid
+.contact-wrapper
+  a
+    display: block
+    padding: 25px
+    margin: 10px 0
     text-align: center
+    text-transform: uppercase
+    border-radius: 3px
+
+  .more-about-me
+    border: 1px solid #FF0000 
+    background-color: #B22222
+
+
+  .get-in-touch
+    border: 1px solid #071D69
+    background-color: $primary
+
+/***** TECHNICAL SKILLS STYLING *****/
+.technical-skills-wrapper
 
 .logo-container
   text-align: center
@@ -225,25 +238,10 @@ p.message_to_viewers
   .logo-wrapper
     padding: 20px 0
 
-  .skill-description
-    //border-top: 1px solid #d3d3d3
 
 .skill-logo
   width: 50px
   height: 50px
-
-
-//   position: relative
-//   float: left
-//   border: 1px solid #222
-//   text-align: center
-//   padding: 15px
-//   -webkit-border-radius: 5px
-//   -moz-border-radius: 5px
-//   border-radius: 5px
-//   width: 16%
-//   margin:  2% 2% 50px 2%
-//   font-size: 0.6em
 
 
 .skill-description
@@ -257,11 +255,50 @@ p.message_to_viewers
   height: 100%
   z-index: 100
 
+/***** RECENT BLOGS STYLING *****/
+
+.post-container
+  padding: 60px 40px
+  margin: 10px 0
+  background-color: #fff
+  border: 1px solid #dadada
+
+.post-content
+  padding: 20px 0
+
+.post-button
+  position: relative
+  display: block
+  padding: 10px 0
+
+  a
+    position: absolute
+    right: 0
+    padding: 12px
+    border: 1px solid #071D69
+    border-radius: 3px 
+    background-color: $primary
+    color: #fff
+    text-transform: uppercase
+    font-size: 0.8em
+    font-weight: light
+
+
 footer
+  position: relative
   width: 100%
   background: rgba(45, 45, 48, .9) none repeat scroll 0% 0%
   height: 150px
   margin-top: 10px
+  
+  .copyright
+    position: absolute
+    display: block
+    width: 100%
+    bottom: 0
+    text-align: center
+    color: #fff
+
 
 
 
@@ -293,6 +330,8 @@ footer
       -o-transition: 1s ease-in-out
       transition: 1s ease-in-out
     */
+
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
 
