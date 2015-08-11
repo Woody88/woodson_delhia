@@ -1,0 +1,11 @@
+- for blog in @blogs
+  %article.post-container
+    .post-header
+      %h4<> 
+        = "#{blog.title}"
+    .post-content
+      %p<> 
+        = "#{blog.subject}"
+    .post-button
+      %a{:href => "#"}
+        Read More

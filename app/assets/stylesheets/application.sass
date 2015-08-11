@@ -43,6 +43,7 @@ a
 
 html, body
   width: 100%
+  min-height: 100%
   height: 100%
   font-family: Georgia,"Times New Roman",Times,serif
   font-weight: 300 
@@ -158,6 +159,9 @@ header
 .show-menu
   right: -225px
 
+.prevent-scroll
+  overflow: hidden
+
 #sidebar-menu 
   list-style: none
 
@@ -259,7 +263,7 @@ p.message_to_viewers
 
 .post-container
   padding: 60px 40px
-  margin: 10px 0
+  margin: 40px 0
   background-color: #fff
   border: 1px solid #dadada
 
@@ -286,6 +290,7 @@ p.message_to_viewers
 
 footer
   position: relative
+  bottom: 0
   width: 100%
   background: rgba(45, 45, 48, .9) none repeat scroll 0% 0%
   height: 150px

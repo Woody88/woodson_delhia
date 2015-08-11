@@ -16,8 +16,14 @@
 #= require turbolinks
 
 jQuery -> 
+  
+  removeSidebar = ->
+    $(document).on 'click', ->
+      $('body').removeClass 'slide-site-wrapper prevent-scroll'
 
-  $('.menu-button').click ->
-    $('body').toggleClass('slide-site-wrapper')
-
-    
+  $('.menu-button').click (e) ->
+    e.stopPropagation()
+    $('body').toggleClass 'slide-site-wrapper prevent-scroll'
+    removeSidebar()
+ 
+  

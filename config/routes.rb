@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+
   root 'public#welcome'
+  get 'about' => 'public#about', as: 'about'
+  get 'contact' => 'public#contact', as: 'contact'
+
+  # Blog Resouces
+
+  resources :blogs
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
