@@ -7,4 +7,5 @@ class PublicController < ApplicationController
 
   def contact
   end
+
 end

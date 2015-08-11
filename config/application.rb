@@ -24,7 +24,7 @@ module MyPortfolio
     config.active_record.raise_in_transactional_callbacks = true
     config.sass.preferred_syntax = :sass
 
-    %w(public).each do |folder|
+    %w(public calendar blogs).each do |folder|
         config.assets.paths << Rails.root.join(folder)
     end
 

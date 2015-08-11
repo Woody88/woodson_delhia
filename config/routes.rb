@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'calendar/calendar'
+
   root 'public#welcome'
   get 'about' => 'public#about', as: 'about'
   get 'contact' => 'public#contact', as: 'contact'
+  get 'calendar' => 'calendar#calendar', as: 'calendar'
 
   # Blog Resouces
 

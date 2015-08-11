@@ -12,13 +12,15 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require moment
+#= require fullcalendar
 #= require ractive
 #= require turbolinks
 
 jQuery -> 
   
   removeSidebar = ->
-    $(document).on 'click', ->
+    $('body').on 'click', ->
       $('body').removeClass 'slide-site-wrapper prevent-scroll'
 
   $('.menu-button').click (e) ->
@@ -26,4 +28,4 @@ jQuery ->
     $('body').toggleClass 'slide-site-wrapper prevent-scroll'
     removeSidebar()
  
-  
+ 

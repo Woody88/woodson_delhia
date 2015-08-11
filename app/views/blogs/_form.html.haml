@@ -1,0 +1,7 @@
+= simple_form_for(@blog) do |f|
+  = f.error_messages
+
+  = f.input :title
+  = f.input :content
+
+  = f.submit 'Post Blog'
