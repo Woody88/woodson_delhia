@@ -7,6 +7,7 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'simple_form'
 gem 'fullcalendar-rails', ' 2.1.1.0'
 gem 'momentjs-rails', '~> 2.9', :github => 'derekprior/momentjs-rails'
+gem 'devise' 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
@@ -22,6 +23,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -55,3 +57,4 @@ group :production do
 end
 
 
+gem 'simple_form'

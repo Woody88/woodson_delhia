@@ -8,4 +8,10 @@ module ApplicationHelper
     end
   end
   
+  def page_title(title)
+  	content_for(:title) do 
+  		title
+  	end
+  end
+
 end

@@ -1,3 +1,4 @@
+- page_title('Welcome')
 .my_motto
   %p 
     %q
@@ -11,12 +12,12 @@
       = image_tag('picme.png', id: 'my_photo')
   .col.span_2_of_2
     %p.message_to_viewers
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus eros. Proin non malesuada orci, id vulputate nunc. Quisque tincidunt, nulla quis feugiat auctor, libero enim consectetur urna, ac luctus nunc lacus a elit. Quisque urna ante, aliquet id mauris mollis, ullamcorper euismod urna. Cras porttitor diam gravida turpis luctus, eget tempus urna fermentum. Sed mollis non nunc eu mattis. Nullam in tortor laoreet, faucibus velit id, congue nunc. Suspendisse tempor sem nec dolor ultricies, sed efficitur velit consectetur. Fusce id est at dolor dictum vulputate.
+      My name is Woodson Delhia, I am currently an employee at Air Canada, an aspiring entrepeneur and also a third year student in Software Development. I have a great interest in developing software. I mostly develop in Ruby but I am also able to use other language if required.
     .contact-wrapper
-      = link_to 'More About Me', about_path, class: 'more-about-me'
+      = link_to 'More About Me !', about_path, class: 'more-about-me'
       %p.text-center
         OR
-      = link_to 'Get In Touch', contact_path, class: 'get-in-touch'
+      = link_to 'Get In Touch !', contact_path, class: 'get-in-touch'
     
 .section.group#skills
   = render 'technical_skills'

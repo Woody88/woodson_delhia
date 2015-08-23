@@ -1,0 +1,33 @@
+= simple_form_for(@event, html: { class: 'event_form'}) do |f|
+  = f.input :title, placeholder: 'Title', label: false
+  = f.input :description, as: :text, placeholder: 'Description', label: false
+  = f.input :date, as: :date, label: false
+  = f.input :start_time, label: false, as: :time
+  = f.input :end_time, label: false, as: :time
+
+  = f.submit 'Add Event'
+
+  
+/ %form#event_form
+/   %a 
+/     Add An Event
+/   .event_container
+/     %div
+/       %input{:type => :text, :name => 'event_title', :placeholder => 'Title'}
+
+/     %div
+/       %textarea{ :name => 'event_description', :placeholder => 'Description', rows: 4}
+/     %div
+/       %input{:type => :date, title: 'date', :placeholder => 'September 10 2015'}
+/     %div
+/       %span
+/         %input{title: 'from_time', placeholder: '00', :name => 'event_from_time'}:
+/         %input{title: 'from_time',  placeholder: '00', :name => 'event_from_time'} -
+        
+/       %span 
+/         %input{title: 'to_time',  placeholder: '06', :name => 'event_to_time'}:
+/         %input{title: 'to_time',  placeholder: '00', :name => 'event_to_time'}
+    
+/     %div
+/       %button#add_event
+/         Add Event

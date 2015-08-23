@@ -1,1 +1,17 @@
-#calendar
+- page_title('My Calendar')
+.calendar_page_wrapper
+  #calendar
+    .external_event_wrapper
+      %h3 Calendar Events
+      .event
+        School
+      .event
+        Work
+  
+
+  .events_info
+    = render 'events/show'
+
+  .add_event
+    = render 'events/events_form'
+      

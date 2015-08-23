@@ -6,11 +6,13 @@ $(document).ready ->
   $('#calendar').fullCalendar
     editable: true,
     header:
-      left: 'prev,next today',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay'
-    defaultView: 'month',
+      left: 'prev',
+      center: 'title,month,agendaWeek,agendaDay,',
+      right: 'next'
+    defaultView: 'agendaWeek',
     height: 500,
+    aspectRatio: 2,
+    droppable: true,
     slotMinutes: 30,
 
     eventSources: [{
@@ -26,11 +28,19 @@ $(document).ready ->
     eventResize: (event, dayDelta, minuteDelta, revertFunc) ->
       updateEvent(event);
 
+  $('.event').draggable
+    zIndex: 999
+    revert: true
+    revertDuration: 0
 
-updateEvent = (the_event) ->
-  $.update "/events/" + the_event.id,
-    event:
-      title: the_event.title,
-      starts_at: "" + the_event.start,
-      ends_at: "" + the_event.end,
-      description: the_event.description
+  updateEvent = (the_event) ->
+    $.update "/events/" + the_event.id,
+      event:
+        title: the_event.title,
+        starts_at: "" + the_event.start,
+        ends_at: "" + the_event.end,
+        description: the_event.description
+
+  $('#add_event').on 'click', (e) ->
+    e.preventDefault()
+    

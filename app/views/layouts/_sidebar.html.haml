@@ -1,12 +1,23 @@
 %aside.sidebar
   My Side Bar
   
+  .color-pallette
+    .color-box{title: 'f0ecd8', aria:{ hidden:"true"}, data:{ icon:"&#xe000;"}}
+    .color-box{title: '75d1c5'}
+    .color-box{title: '357e8f'}
+    .color-box{title: '142940'}
+    .color-box{title: '802c2a'}
+    .color-box{title: 'd6757e'}
+
   %ul#sidebar-menu
     %li
       = link_to 'About Me', about_path
     %li
       = link_to 'Blog', blogs_path
     %li
+      = link_to 'School', '#'
+    %li
       = link_to 'My Calendar', calendar_path
     %li
       = link_to 'Contact', about_path
+

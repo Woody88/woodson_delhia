@@ -12,6 +12,7 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require jquery-ui/draggable
 #= require moment
 #= require fullcalendar
 #= require ractive
@@ -20,7 +21,7 @@
 jQuery -> 
   
   removeSidebar = ->
-    $('body').on 'click', ->
+    $('#site-wrapper').on 'click', ->
       $('body').removeClass 'slide-site-wrapper prevent-scroll'
 
   $('.menu-button').click (e) ->

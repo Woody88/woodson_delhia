@@ -13,8 +13,21 @@
         = link_to 'My Calendar', calendar_path
       %li
         = link_to 'Contact', about_path
-        
-
+    
     .menu-button
       .menu-bar
         &#8801;
+
+%ul#device-menu
+  %li.about_icon<>
+    = link_to '', about_path, class: 'li_user'
+  %li.blogs_icon<>
+    = link_to '', blogs_path, class: 'li_bubble'
+  %li.calendar_icon<>
+    = link_to '', calendar_path, class: 'li_calendar'
+  %li.study_icon<> 
+    = link_to '', '#', class: 'li_study'
+  %li.mail_icon<>
+    = link_to '', contact_path, class: 'li_mail'
+
+          
