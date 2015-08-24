@@ -9,24 +9,38 @@ $(document).ready ->
       left: 'prev',
       center: 'title,month,agendaWeek,agendaDay,',
       right: 'next'
-    defaultView: 'agendaWeek',
+    defaultView: 'month',
     height: 500,
     aspectRatio: 2,
     droppable: true,
     slotMinutes: 30,
 
-    eventSources: [{
-      url: '/events',
-    }],
 
-    timeFormat: 'h:mm t{ - h:mm t} ',
+    eventSources: [{
+      url: '/events.json',
+    }],
+    eventColor: "transparent",
+    eventTextColor: '#222',
+    timeFormat: 'ht',
     dragOpacity: "0.5"
+
+    eventRender: ( event, element, view ) ->
+      if view.name == 'agendaWeek'
+        element.css('background', 'red')
+
+
 
     eventDrop: (event, dayDelta, minuteDelta, allDay, revertFunc) ->
       updateEvent(event);
 
     eventResize: (event, dayDelta, minuteDelta, revertFunc) ->
       updateEvent(event);
+
+    dayClick: (date, jsEvent, view ) ->
+      console.log(date)
+
+    eventClick: (calEvent, jsEvent, view) ->
+      return false
 
   $('.event').draggable
     zIndex: 999
@@ -41,6 +55,4 @@ $(document).ready ->
         ends_at: "" + the_event.end,
         description: the_event.description
 
-  $('#add_event').on 'click', (e) ->
-    e.preventDefault()
-    
+

@@ -1,4 +1,4 @@
-= simple_form_for(@event, html: { class: 'event_form'}) do |f|
+= simple_form_for(@event, remote: true, html: { class: 'event_form'}) do |f|
   = f.input :title, placeholder: 'Title', label: false
   = f.input :description, as: :text, placeholder: 'Description', label: false
   = f.input :date, as: :date, label: false

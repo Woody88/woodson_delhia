@@ -1,0 +1,5 @@
+$('.event_form').bind('ajax:success', function(){
+	$('.event_form')[0].reset();
+ 	$('#calendar').fullCalendar( 'refetchEvents' );
+}); 
+ 
